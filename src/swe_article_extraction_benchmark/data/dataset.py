@@ -15,7 +15,6 @@ class DataSample:
     id: str
     html: str
     groundtruth_content: str
-    groundtruth_content_list: list[dict[str, t.Any]] | None = None
 
     url: str | None = None
     domain: str | None = None
@@ -34,7 +33,6 @@ class DataSample:
             "id": self.id,
             "html": self.html,
             "groundtruth_content": self.groundtruth_content,
-            "groundtruth_content_list": self.groundtruth_content_list,
             "main_html": self.main_html,
             "url": self.url,
             "domain": self.domain,
