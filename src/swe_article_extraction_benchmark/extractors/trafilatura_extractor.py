@@ -1,11 +1,14 @@
-import re
 import traceback
 import typing as t
 from dataclasses import dataclass
 
 import trafilatura
 
-from swe_article_extraction_benchmark.extractors import BaseExtractor, ExtractionResult
+from swe_article_extraction_benchmark.extractors import (
+    BaseExtractor,
+    ExtractionResult,
+    shared,
+)
 
 
 @dataclass
@@ -59,8 +62,8 @@ class TrafilaturaExtractor(BaseExtractor, name="trafilatura"):
             return ExtractionResult(
                 content=content or "",
                 # content_list=content_list,
-                title=self._extract_title(html),
-                language=self._detect_language(content),
+                title=shared.extract_title(html),
+                language=shared.detect_language(content),
                 success=True,
             )
         except Exception as exc:
@@ -68,34 +71,6 @@ class TrafilaturaExtractor(BaseExtractor, name="trafilatura"):
                 f"Trafilatura extracion failed: {str(exc)}",
                 error_traceback="".join(traceback.format_exception(exc)),
             )
-
-    def _extract_title(self, html: str) -> str | None:
-        """提取页面标题."""
-        try:
-            title_match = re.search(
-                r"<title[^>]*>(.*?)</title>", html, re.IGNORECASE | re.DOTALL
-            )
-            if title_match:
-                return title_match.group(1).strip()
-        except Exception:
-            pass
-        return None
-
-    def _detect_language(self, content: str | None) -> str | None:
-        """检测内容语言."""
-        if not content:
-            return None
-
-        # 简单的语言检测逻辑
-        english_chars = len(re.findall(r"[a-zA-Z]", content))
-        swedish_chars = len(re.findall(r"och|[åäö]", content))
-
-        if swedish_chars > english_chars:
-            return "swe"
-        elif english_chars > 0:
-            return "eng"
-        else:
-            return None
 
 
 class TrafilaturaTxtExtractor(TrafilaturaExtractor, name="trafilatura_txt"):
@@ -133,12 +108,13 @@ class TrafilaturaTxtExtractor(TrafilaturaExtractor, name="trafilatura_txt"):
             return ExtractionResult(
                 content=content,
                 # content_list=content_list,
-                title=self._extract_title(html),
-                language=self._detect_language(content),
+                title=shared.extract_title(html),
+                language=shared.detect_language(content),
                 success=True,
             )
 
         except Exception as e:
             return ExtractionResult.create_error_result(
-                f"Trafilatura extraction failed: {str(e)}"
+                f"Trafilatura extraction failed: {str(e)}",
+                error_traceback="".join(traceback.format_exception(exc)),
             )

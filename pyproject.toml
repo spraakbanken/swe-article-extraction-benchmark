@@ -11,6 +11,7 @@ dependencies = [
   "nltk>=3.9.3",
   "orjson>=3.11.7",
   "rapidfuzz>=3.14.3",
+  "resiliparse>=0.16.0",
   "rouge-score>=0.1.2",
   "running-stats>=0.2.0",
   "trafilatura>=2.0.0",

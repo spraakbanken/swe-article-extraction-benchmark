@@ -3,6 +3,9 @@ from swe_article_extraction_benchmark.extractors.base import (
     ExtractionResult,
     ExtractorFactory,
 )
+from swe_article_extraction_benchmark.extractors.resiliparse_extractor import (
+    ResiliparseExtractor,
+)
 from swe_article_extraction_benchmark.extractors.trafilatura_extractor import (
     TrafilaturaExtractor,
     TrafilaturaTxtExtractor,
@@ -14,4 +17,5 @@ __all__ = [
     "ExtractorFactory",
     "TrafilaturaExtractor",
     "TrafilaturaTxtExtractor",
+    "ResiliparseExtractor",
 ]
