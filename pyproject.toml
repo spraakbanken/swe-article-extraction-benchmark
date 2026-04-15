@@ -3,15 +3,34 @@ name = "swe-article-extraction-benchmark"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+  "beautifulsoup4>=4.14.3",
+  "httpx>=0.28.1",
+  "json-arrays>=0.15.0",
+  "nltk>=3.9.3",
+  "orjson>=3.11.7",
+  "rapidfuzz>=3.14.3",
+  "rouge-score>=0.1.2",
+  "running-stats>=0.2.0",
+  "trafilatura>=2.0.0",
+]
 
 [project.scripts]
 prepare-raw-html = "prepare_raw_html.main:main"
+swe-article-bench = "swe_article_extraction_benchmark.main:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=9.0.2",
+  "pytest-cov>=7.0.0",
+  "ruff>=0.15.7",
+  "ty>=0.0.24",
+]
 
 [build-system]
 requires = ["uv_build>=0.10,<0.11.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-name = ["prepare_raw_html"]
+module-name = "swe_article_extraction_benchmark"

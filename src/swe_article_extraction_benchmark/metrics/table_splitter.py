@@ -1,0 +1,82 @@
+import re
+from typing import List
+
+from bs4 import BeautifulSoup
+
+from swe_article_extraction_benchmark.metrics.base_content_splitter import (
+    BaseContentSplitter,
+)
+
+
+class TableSplitter(BaseContentSplitter):
+    """从文本中提取表格"""
+
+    def extract(self, text: str) -> str:
+        """提取表格"""
+        table_parts = self.extract_basic(text)
+
+        return "\n".join(table_parts)
+
+    def extract_basic(self, text: str) -> List[str]:
+        """基本表格提取方法"""
+        table_parts = []
+
+        # 移除代码块内容
+        text_without_code = self._remove_code_blocks(text)
+
+        # HTML表格提取（在清理后的文本中）
+        soup = BeautifulSoup(text_without_code, "html.parser")
+
+        for table in soup.find_all("table"):
+            if not table.find_parent(["td", "tr", "tbody", "table"]):
+                table_parts.append(str(table))
+
+        # Markdown表格提取
+        lines = text.split("\n")
+        table_lines = []
+        in_markdown_table = False
+
+        def is_md_table_line(line):
+            """判断是否可能是 Markdown 表格行"""
+            if line.count("|") < 1:
+                return False
+            return True
+
+        def is_md_separator_line(line):
+            """判断是否为 Markdown 分隔行"""
+            parts = [p.strip() for p in line.split("|")]
+            for p in parts:
+                if p and not re.match(r"^:?\-{3,}:?$", p):
+                    return False
+            return True
+
+        def save_table():
+            """保存当前表格并清空缓存"""
+            nonlocal table_lines
+            if len(table_lines) >= 2 and is_md_separator_line(table_lines[1]):
+                md_table = "\n".join(table_lines)
+                table_parts.append(md_table)
+
+        for line in lines:
+            if is_md_table_line(line):
+                table_lines.append(line)
+                in_markdown_table = True
+            else:
+                if in_markdown_table:
+                    save_table()
+                    table_lines = []
+                    in_markdown_table = False
+
+        # 处理文档末尾的 Markdown 表格
+        if in_markdown_table:
+            save_table()
+
+        return table_parts
+
+    def _remove_code_blocks(self, text: str) -> str:
+        """移除Markdown代码块"""
+        # 移除多行代码块 ```
+        text_without_blocks = re.sub(r"```.*?```", "", text, flags=re.DOTALL)
+        # 移除内联代码块 `
+        text_without_code = re.sub(r"`[^`]*`", "", text_without_blocks)
+        return text_without_code
