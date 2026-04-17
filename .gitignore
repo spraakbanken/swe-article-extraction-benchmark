@@ -45,4 +45,4 @@ results/
 .coverage*
 coverage.xml
 
-webmainbench.egg-info/*
+/data/

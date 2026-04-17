@@ -25,6 +25,7 @@ def _process(input_file: Path, dataset_path: Path) -> None:
             print(f"{file_metadata=}")
             file_id = uuid.uuid4().hex
             file_content = read_content(input_dir / file_metadata["file"])
+            groundtruth_content = read_content(input_dir / file_metadata["groundtruth"])
 
             sample = DataSample(
                 id=file_id,
@@ -32,7 +33,7 @@ def _process(input_file: Path, dataset_path: Path) -> None:
                 domain=file_metadata.get("domain"),
                 url=file_metadata["url"],
                 html=file_content,
-                groundtruth_content="",
+                groundtruth_content=groundtruth_content,
             )
             sink.send(sample.to_dict())
 
