@@ -153,7 +153,7 @@ class RougeMetric(BaseMetric):
         """Setup the ROUGE metric."""
 
         self.rouge_types = self.config.get(
-            "rouge_types", ["rouge-1", "rouge-2", "rouge-l"]
+            "rouge_types", ["rouge1", "rouge2", "rougeL"]
         )
         self.use_stemmer = self.config.get("use_stemmer", True)
         self._rouge = rouge_scorer.RougeScorer(
@@ -182,26 +182,45 @@ class RougeMetric(BaseMetric):
             # Both are empty
             score = 1.0
             details = {
-                "rouge-1": {"f": 1.0},
-                "rouge-2": {"f": 1.0},
-                "rouge-l": {"f": 1.0},
+                "rouge1": {"f": 1.0},
+                "rouge2": {"f": 1.0},
+                "rougeL": {"f": 1.0},
             }
         elif not predicted.strip() or not groundtruth.strip():
             # One is empty
             score = 0.0
             details = {
-                "rouge-1": {"f": 0.0},
-                "rouge-2": {"f": 0.0},
-                "rouge-l": {"f": 0.0},
+                "rouge1": {"f": 0.0},
+                "rouge2": {"f": 0.0},
+                "rougeL": {"f": 0.0},
             }
         else:
             # Calculate ROUGE scores
             try:
-                scores = self._rouge.score(predicted, groundtruth)[0]
+                scores = self._rouge.score(predicted, groundtruth)
+                print(f"{scores=}")
+                # scores = scores[0]
                 # Use ROUGE-L F1 as the main score
-                score = scores["rouge-l"]["f"]
-                details = scores
+                score = scores["rougeL"].fmeasure
+                details = {
+                    "rouge1": {
+                        "f": scores["rouge1"].fmeasure,
+                        "precision": scores["rouge1"].precision,
+                        "recall": scores["rouge1"].recall,
+                    },
+                    "rouge2": {
+                        "f": scores["rouge2"].fmeasure,
+                        "precision": scores["rouge2"].precision,
+                        "recall": scores["rouge2"].recall,
+                    },
+                    "rougeL": {
+                        "f": scores["rougeL"].fmeasure,
+                        "precision": scores["rougeL"].precision,
+                        "recall": scores["rougeL"].recall,
+                    },
+                }
             except Exception as e:
+                print(f"{scores=}")
                 return MetricResult.create_error_result(
                     self.name, f"ROUGE calculation failed: {str(e)}"
                 )

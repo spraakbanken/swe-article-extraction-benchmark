@@ -1,6 +1,7 @@
 """Extractor with resiliparse."""
 
 import traceback
+import typing as t
 from dataclasses import dataclass
 
 from resiliparse.extract.html2text import extract_plain_text

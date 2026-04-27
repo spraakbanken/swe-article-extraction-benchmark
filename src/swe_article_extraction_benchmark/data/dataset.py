@@ -24,6 +24,7 @@ class DataSample:
     tags: list[str] | None = None
     main_html: str | None = None
 
+    metadata: dict[str, t.Any] | None = None
     # Extracted results (populated during evaluation)
     extracted_result: dict[str, t.Any] | None = None
 
@@ -40,6 +41,7 @@ class DataSample:
             "content_type": self.content_type,
             "difficulty": self.difficulty,
             "tags": self.tags,
+            "metadata": self.metadata,
         }
 
     @classmethod

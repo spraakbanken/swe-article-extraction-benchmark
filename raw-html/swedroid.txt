@@ -1,0 +1,24 @@
+Vi raderade lösenordet för ett Microsoft-konto: så här fungerar det
+Lösenord är förlegade och relativt osäkra och krångliga. Idag finns den betydligt säkrare och smidigare ersättaren passkeys: kryptografiska nycklar som är knutna till hårdvara. Ingen kan gissa sig till en passkey eller lura sig till den genom nätfiske och social manipulation. Passkeys kan inte bruteforcas eller läcka ut från serversidan.
+
+Enligt Google är en passkey till och med säkrare än lösenord med 2FA. En annan fördel är att vi slipper hålla reda på och mata in lösenord. Google har fortfarande kvar lösenorden som backup men Microsoft låter användare ta bort lösenordet och ha ett helt lösenordsfritt konto. Vi testade att ta bort lösenordet för att göra kontot säkrare och för att undersöka användarupplevelsen.
+
+Att inaktivera lösenordet kändes instinktivt olustigt eftersom vi är så vana vid att alltid ha användarnamn och lösenord till allt. Ingen vill bli av med ett konto permanent utan möjlighet till återställning.
+
+Att tänka på innan
+Själva raderingen är enkel: du loggar bara in på Microsofts kontoinställningar på webben och väljer att inaktivera lösenordet. Därefter går det inte längre att logga in på kontot med lösenord överhuvudtaget. Om du bara kan logga in med passkey och kontot saknar lösenord, vad händer då om du blir av med din passkey? En passkey kan inte skrivas ned eller delas.
+
+Att bli av med ens passkey är egentligen inte värre än att glömma lösenordet, förutsatt att du vidtagit försiktighetsåtgärder innan. Knyt först en sekundär e-postadress till Microsoft-kontot, samt ditt telefonnummer. Dessa alternativa metoder att nå dig gör att du ändå kan få tillgång till kontot om det krisar.
+
+Det är även bra att skapa en återställningsnyckel innan lösenordet tas bort. Nyckeln har 25 tecken och genereras från sidan med inloggningsalternativ i Microsofts kontoinställningar. Lagra nyckeln på ett säkert ställe.
+
+Numera kan passkeys dessutom sparas i lösenordshanterare likt Google Password Manager. Om du blir av med mobilen och därmed även nyckeln kan du skaffa ny mobil och återställa nyckeln. För att vara extra säker kan du skapa flera passkeys till Microsoft-kontot – exempelvis en på telefonen och en på laptoppen. Om du blir av med ena har du förmodligen kvar den andra.
+
+Går det fortfarande att logga in på äldre enheter som inte stödjer passkeys?
+
+När lösenordet tas bort påpekar en dialogruta att användaren kan förlora tillgång till ”vissa äldre appar, tjänster och enheter”. Det ska dock fortfarande gå att logga in på äldre enheter som inte stödjer passkeys, exempelvis en gammal Xbox One, genom att välja ”logga in från annan enhet” och dylika omvägar.
+
+Vissa äldre Microsoft-enheter stödjer inte ens 2FA och på de enheterna ska det gå att logga in genom så kallade ”applösenord”, vilka enligt utsago även kan utnyttjas när passkey-stöd saknas.
+
+Inloggningen
+Att logga in på Microsoft-kontot efter att lösenordet tagits bort är busenkelt. Eftersom en passkey finns på datorn räcker det att ange PIN-koden för Windows för att logga in. Om din enhet har biometri kan biometrin utnyttjas istället. Mobilen kan även användas för inloggning på dator och då visas en QR-kod som skannas med telefonen, i stil med Bank-id.

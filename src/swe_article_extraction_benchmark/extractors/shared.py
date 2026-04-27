@@ -1,3 +1,6 @@
+import re
+
+
 def extract_title(html: str) -> str | None:
     """Extract title from html."""
     try:

@@ -1,0 +1,2868 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+<head>
+	
+<meta charset="ISO-8859-1">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+
+<meta name="keywords" content="AI - Har det peakat?, flashback, forum" />
+<meta name="description" content="AI - Har det peakat? AI - Artificiell intelligens" />
+
+<meta property="og:title" content="AI - Har det peakat?" />
+<meta property="og:url" content="https://www.flashback.org/t3688745" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="flashback.org" />
+<meta property="og:image" content="https://static.flashback.org/images/misc/fbo.jpg" />
+
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Search" />
+<link rel="shortcut icon" href="https://static.flashback.org/img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://static.flashback.org/img/mobile-icon.png" />
+<link rel="alternate" type="application/rss+xml" title="Flashback Forum RSS Feed" href="/external.php?type=RSS" />
+
+<!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<script type="text/javascript" async=true>
+function load_qc(qc_loaded) {
+  // already loaded
+  if (window.__tcfapi) {
+	  if (typeof qc_loaded === 'function') {
+        return qc_loaded();
+	  } else {
+        return;
+	  }
+  }
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.inmobi.com'
+    .concat('/choice/', 'cpHynGFrSsPB2', '/', host, '/choice.js?tag_version=V3');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+  firstScript.parentNode.insertBefore(element, firstScript);
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          //doc.body.appendChild(iframe);
+          doc.body.insertBefore(iframe, doc.body.firstChild);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = Object.assign(args[3], { tag_version: 'V3' });
+        }
+        queue.push(args);
+      }
+    }
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+      var payload = json.__tcfapiCall;
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+      if (typeof qc_loaded === 'function') {
+        setTimeout(qc_loaded, 100);
+      }
+    }
+  };
+  makeStub();
+  function makeGppStub() {
+    const CMP_ID = 10;
+    const SUPPORTED_APIS = [
+      '2:tcfeuv2',
+      '6:uspv1',
+      '7:usnatv1',
+      '8:usca',
+      '9:usvav1',
+      '10:uscov1',
+      '11:usutv1',
+      '12:usctv1'
+    ];
+    window.__gpp_addFrame = function (n) {
+      if (!window.frames[n]) {
+        if (document.body) {
+          var i = document.createElement('iframe');
+          i.style.cssText = 'display:none';
+          i.name = n;
+          //document.body.appendChild(i);
+          document.body.insertBefore(i, document.body.firstChild);
+        } else {
+          window.setTimeout(window.__gpp_addFrame, 10, n);
+        }
+      }
+    };
+    window.__gpp_stub = function () {
+      var b = arguments;
+      __gpp.queue = __gpp.queue || [];
+      __gpp.events = __gpp.events || [];
+      if (!b.length || (b.length == 1 && b[0] == 'queue')) {
+        return __gpp.queue;
+      }
+      if (b.length == 1 && b[0] == 'events') {
+        return __gpp.events;
+      }
+      var cmd = b[0];
+      var clb = b.length > 1 ? b[1] : null;
+      var par = b.length > 2 ? b[2] : null;
+      if (cmd === 'ping') {
+        clb(
+          {
+            gppVersion: '1.1', // must be Version.Subversion, current: 1.1
+            cmpStatus: 'stub', // possible values: stub, loading, loaded, error
+            cmpDisplayStatus: 'hidden', // possible values: hidden, visible, disabled
+            signalStatus: 'not ready', // possible values: not ready, ready
+            supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+            cmpId: CMP_ID, // IAB assigned CMP ID, may be 0 during stub/loading
+            sectionList: [],
+            applicableSections: [-1],
+            gppString: '',
+            parsedSections: {},
+          },
+          true
+        );
+      } else if (cmd === 'addEventListener') {
+        if (!('lastId' in __gpp)) {
+          __gpp.lastId = 0;
+        }
+        __gpp.lastId++;
+        var lnr = __gpp.lastId;
+        __gpp.events.push({
+          id: lnr,
+          callback: clb,
+          parameter: par,
+        });
+        clb(
+          {
+            eventName: 'listenerRegistered',
+            listenerId: lnr, // Registered ID of the listener
+            data: true, // positive signal
+            pingData: {
+              gppVersion: '1.1', // must be Version.Subversion, current: 1.1
+              cmpStatus: 'stub', // possible values: stub, loading, loaded, error
+              cmpDisplayStatus: 'hidden', // possible values: hidden, visible, disabled
+              signalStatus: 'not ready', // possible values: not ready, ready
+              supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+              cmpId: CMP_ID, // list of supported APIs
+              sectionList: [],
+              applicableSections: [-1],
+              gppString: '',
+              parsedSections: {},
+            },
+          },
+          true
+        );
+      } else if (cmd === 'removeEventListener') {
+        var success = false;
+        for (var i = 0; i < __gpp.events.length; i++) {
+          if (__gpp.events[i].id == par) {
+            __gpp.events.splice(i, 1);
+            success = true;
+            break;
+          }
+        }
+        clb(
+          {
+            eventName: 'listenerRemoved',
+            listenerId: par, // Registered ID of the listener
+            data: success, // status info
+            pingData: {
+              gppVersion: '1.1', // must be Version.Subversion, current: 1.1
+              cmpStatus: 'stub', // possible values: stub, loading, loaded, error
+              cmpDisplayStatus: 'hidden', // possible values: hidden, visible, disabled
+              signalStatus: 'not ready', // possible values: not ready, ready
+              supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+              cmpId: CMP_ID, // CMP ID
+              sectionList: [],
+              applicableSections: [-1],
+              gppString: '',
+              parsedSections: {},
+            },
+          },
+          true
+        );
+      } else if (cmd === 'hasSection') {
+        clb(false, true);
+      } else if (cmd === 'getSection' || cmd === 'getField') {
+        clb(null, true);
+      }
+      //queue all other commands
+      else {
+        __gpp.queue.push([].slice.apply(b));
+      }
+    };
+    window.__gpp_msghandler = function (event) {
+      var msgIsString = typeof event.data === 'string';
+      try {
+        var json = msgIsString ? JSON.parse(event.data) : event.data;
+      } catch (e) {
+        var json = null;
+      }
+      if (typeof json === 'object' && json !== null && '__gppCall' in json) {
+        var i = json.__gppCall;
+        window.__gpp(
+          i.command,
+          function (retValue, success) {
+            var returnMsg = {
+              __gppReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: i.callId,
+              },
+            };
+            event.source.postMessage(msgIsString ? JSON.stringify(returnMsg) : returnMsg, '*');
+          },
+          'parameter' in i ? i.parameter : null,
+          'version' in i ? i.version : '1.1'
+        );
+      }
+    };
+    if (!('__gpp' in window) || typeof window.__gpp !== 'function') {
+      window.__gpp = window.__gpp_stub;
+      window.addEventListener('message', window.__gpp_msghandler, false);
+      window.__gpp_addFrame('__gppLocator');
+    }
+  };
+  makeGppStub();
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+};
+// need to init for ads.js using the api
+if (!document.cookie.match(/euconsent-v2=/) || true) {
+	load_qc();
+}
+window.onload = function() {
+  if (!document.querySelector('.qc-settings')) {
+    return;
+  }
+  document.querySelector('.qc-settings').addEventListener('click', function(e) {
+    load_qc(function() {
+      window.__tcfapi('displayConsentUi', 2, function() {});
+    });
+    e.preventDefault();
+  });
+};
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<script type="text/javascript">
+window.adsrc = "holid";
+</script>
+<script async type="text/javascript" src="https://static.flashback.org/js/2026/ads.js?forumids=555,4&t=1776413817&categories=data" id="script-adsys"></script>
+<script async defer="defer" type="text/javascript" src="//ads.holid.io/auto/flashback.org/holid.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QM1VDEY04C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QM1VDEY04C', { 'anonymize_ip': true });
+</script>
+<script async src="https://assets.strossle.com/strossle-widget-sdk/1/strossle-widget-sdk.js"></script>
+
+
+<link href="https://static.flashback.org/css/bootstrap.min.css?v=20260226" rel="stylesheet" />
+<link href="https://static.flashback.org/css/bundle-20260326.min.css?v=20260226" rel="stylesheet" />
+
+<script defer type="text/javascript" src="https://static.flashback.org/js/2026/vendor.2026.min.js?v=20260226"></script>
+<script defer type="text/javascript" src="https://static.flashback.org/js/2026/vbulletin.min.js?v=20260226"></script>
+<script defer type="text/javascript" src="https://static.flashback.org/js/2026/main.js?v=20260226"></script>
+
+
+	<title>AI - Har det peakat? - Flashback Forum</title>
+</head>
+<body>
+
+
+<nav id="navbar-offcanvas-search" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+	<!--span class="navmenu-brand">&nbsp;</span-->
+
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-12">
+	<br />
+
+	<form action="/sok" method="get" name="sok" role="search" id="form-dropdown-search">
+
+		<div class="form-group">
+			<input type="text" name="q" class="form-control" placeholder="S&ouml;k ..." size="32" />
+		</div>
+
+		
+		<div class="form-group">
+			<select name="f" class="input-sm form-control">
+			<option value="0">Alla forum</option><option value="4">Dator och IT</option><option value="555">AI - Artificiell intelligens</option><option value="3688745" selected="selected">Detta &auml;mne</option>
+			</select>
+		</div>
+		
+
+		<div class="form-group">
+			<label class="radio-inline">
+				<input type="radio" name="sp" value="0" checked="checked" /> Visa &auml;mnen
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="sp" value="1" /> Visa inl&auml;gg
+			</label>
+		</div>
+
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-block btn-md">
+				<i class="glyphicon glyphicon-search"></i> S&ouml;k
+			</button>
+		</div>
+	</form>
+
+		
+
+	</div>
+	</div>
+	</div>
+</nav>
+
+
+<!-- SIDE NAVIGATION -->
+<nav id="navbar-offcanvas" class="navmenu navmenu-inverse navmenu-fixed-left offcanvas" role="navigation">
+	<span class="navmenu-brand">
+		<span class="pull-left" style="font-size:11px"><strong>25 990</strong> online</span>
+		<a class="btn-donate pull-right hidden" data-toggle="modal" href="#modal-donation" style="color: #fff;font-size:11px;text-decoration: none">St&ouml;d Flashback</a>
+		<div class="clearfix"></div>
+	</span>
+
+	
+	<ul id="navmenu-nav-user" class="nav navmenu-nav collapse">
+	
+		<li><a href="/usercp.php">Kontrollpanel</a></li>
+		<li><a href="/u0">Min profil</a></li>
+		<li><a href="/subscription.php">Prenumerationer</a></li>
+		<li><a href="/find_posts_by_user.php?userid=0">Mina inl&auml;gg</a></li>
+		<li><a href="/find_threads_by_user.php?userid=0">Mina startade &auml;mnen</a></li>
+		<li><a href="/find_posts_by_user.php?quserid=0">Mina citerade inl&auml;gg</a></li>
+		<li><a href="/misc.php?do=buddylist">Min kompislista</a></li>
+		<li><a href="/forumdisplay.php?do=markread">Markera forum som l&auml;sta</a></li>
+
+		
+	</ul>
+
+	<ul class="nav navmenu-nav">
+		<li><a href="/a-o">A-&Ouml;</a></li>
+		<li><a href="/regler">Regler</a></li>
+
+		
+		<li role="separator" class="divider"></li>
+	</ul>
+
+</nav>
+
+
+<div class="navbar navbar-default navbar-fixed-top navbar-scrolled-top" id="navbar-top">
+    <div class="site-wrapper">
+
+    <div class="container-fluid">
+
+    <div class="row">
+    <div class="col-md-12 col-lg-9">
+
+		<!-- nav for desktop, tablets and mobile hamburger navbar brand + login btn -->
+		<div class="navbar-header">
+			<button class="visible-xs navbar-toggle collapsed" data-toggle="offcanvas" data-target="#navbar-offcanvas" data-canvas="body">
+				<i class="glyphicon glyphicon-menu-hamburger"></i>
+			</button>
+
+			<button class="visible-xs navbar-btn collapsed" data-toggle="offcanvas" data-target="#navbar-offcanvas-search" data-canvas="body">
+				<i class="glyphicon glyphicon-search"></i>
+			</button>
+
+			<a class="navbar-brand" href="/"></a>
+
+		</div> <!-- /navbar-header -->
+
+
+        <div class="collapse navbar-collapse" id="navbar-top-menu">
+
+            <ul class="nav navbar-nav navbar-right">
+				
+					<li><a href="/register/"><i class="fa fa-user"></i> Bli medlem</a></li>
+					<li><a href="/login.php"><i class="fa fa-sign-in"></i> Logga in</a></li>
+				
+            </ul>
+        </div> <!-- /navbar-top-menu -->
+
+	</div>
+	</div> <!-- /row -->
+	<div class="row">
+	<div class="col-md-12 col-lg-9">
+
+		<div class="navbar-footer hidden">
+			<ul class="list-inline pull-left">
+				<li><strong>25 990</strong><span class="hidden-xs"> bes&ouml;kare</span> online</li>
+				<li><strong>1 699 710</strong> medlemmar</li>
+				<li><strong>87 981 724</strong> inl&auml;gg</li>
+			</ul>
+			<ul class="list-inline pull-right hidden">
+				<li><strong>St&ouml;d Flashback</strong> &nbsp;<span>Swish:</span> <strong class="copy-swish-number">123 536 99 96</strong>
+					<span class="hidden">&nbsp;<span>Bankgiro:</span> <strong>211-4106</strong></span>
+				</li>
+			</ul>
+		</div> <!-- /navbar-footer -->
+	</div>
+	</div> <!-- /row -->
+
+    </div> <!-- /container -->
+    </div> <!-- /site-wrapper -->
+</div> <!-- /navbar-top -->
+
+<!-- 2nd navmenu visible for desktop -->
+<div class="navbar navbar-default navbar-menu-fixed-top" id="navbar-menu">
+	<div class="site-wrapper">
+	<div class="container-fluid visible-xs">
+			<ul class="nav navbar-nav navbar-left">
+				<!--li><a class="" data-toggle="offcanvas" data-target="#navbar-offcanvas-forum" data-canvas="body">Forum</a></li-->
+				<li><a href="/aktuella-amnen/2026-04-17">Aktuellt</a></li>
+				<li><a href="/populara-amnen/2026-04-17">Nytt</a></li>
+
+				
+
+			<!-- buttons for mobile when logged in. pm etc. -->
+			
+				<li class="pull-right">
+					<a href="/login.php"><i class="fa fa-sign-in"></i> Logga in</a>
+				</li>
+			
+			</ul>
+	</div>
+	<div class="container-fluid visible-sm visible-md visible-lg">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="/">Hem</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="glyphicon glyphicon-menu-hamburger"></i>
+						Avdelningar
+					</a>
+					<div id="dropdown-forum" class="dropdown-menu dropdown-menu-left dropdown-content">
+
+						<div class="container-fluid" style="width:320px">
+							<div class="row">
+							<div class="col-sm-12">
+							</div>
+							</div>
+
+						</div>
+
+					</div>
+				</li>
+				<li><a href="/aktuella-amnen/2026-04-17">Aktuella &auml;mnen</a></li>
+				<li><a href="/populara-amnen/2026-04-17">Popul&auml;ra &auml;mnen</a></li>
+				<li><a href="/nya-amnen/2026-04-17">Nya &auml;mnen</a></li>
+				<li><a href="/nya-inlagg/2026-04-17">Nya inl&auml;gg</a></li>
+				<li><a href="/regler">Regler</a></li>
+
+				<li class="dropdown">
+					<a href="search.php" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i> S&ouml;k</a>
+					<ul id="dropdown-search" class="dropdown-menu dropdown-menu-left dropdown-content">
+						<form action="/sok/" method="get" name="sok" role="search" id="form-dropdown-search" class="navmenu-form" accept-charset="UTF-8">
+							<div class="input-group">
+								<input type="hidden" name="so" value="pd" />
+								<input type="text" name="query" class="form-control input-sm" placeholder="S&ouml;k ..." required />
+								<span class="input-group-btn">
+									<button class="btn btn-sm btn-primary" type="submit">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div>
+
+							
+							<div class="form-group">
+								<select name="f" class="input-sm form-control">
+								<option value="0">Alla forum</option><option value="4">Dator och IT</option><option value="555">AI - Artificiell intelligens</option><option value="3688745" selected="selected">Detta &auml;mne</option>
+								</select>
+							</div>
+							
+
+							<div class="form-group text-center">
+								<label class="radio-inline">
+									<input type="radio" name="sp" value="0"  /> Visa &auml;mnen
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="sp" value="1" checked="checked" /> Visa inl&auml;gg
+								</label>
+							</div>
+
+							<div class="form-group text-center">
+								<a href="/sok/" style="text-decoration:none">Avancerad s&ouml;kning &rarr;</a>
+							</div>
+						</form>
+					</ul>
+				</li>
+
+				
+
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	
+</div>
+
+
+
+<div id="site">
+
+<div class="container-fluid content" id="site-content">
+
+
+	<div class="row">
+		<div class="col-md-9 col-sm-12 col-xs-12" id="site-left">
+
+
+
+	<div id="top-banner-wrapper" class="hidden-xs"></div>
+
+
+
+
+<div class="list-forum-title" style="border-color: #7b98af">
+	<span class="fa fa-circle hidden-xs" style="color:#7b98af"></span>
+	<ol class="breadcrumb">
+		
+	<li><a href="/f4-dator-och-it-60417">Dator och IT</a></li>
+
+
+	<li><a href="/f555-ai-artificiell-intelligens-60417">AI - Artificiell intelligens</a></li>
+
+
+	</ol>
+</div>
+
+
+<div class="page-title">
+	<h1>
+	<a href="/t3688745">AI - Har det peakat?</a>
+
+</h1>
+</div>
+
+
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+
+
+<div class="row row-forum-toolbar">
+	<div class="col-sm-4 col-xs-6">
+		<div class="btn-group btn-group-xs">
+		
+			<a class="btn btn-default btn-xs" href="/newreply.php?do=newreply&amp;noquote=1&amp;p=92597432" rel="nofollow">
+			
+				<span data-toggle="tooltip" data-title="Svara p&aring; &auml;mnet">
+					<i class="fa fa-reply" aria-hidden="true"></i><span class="btn-text"> Svara</span>
+				</span>
+			</a>
+		
+
+		<div class="btn-group">
+			<a class="dropdown-toggle btn btn-default btn-xs" role="button" id="dropdown-menu-threadtools" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<span data-toggle="tooltip" title="&Auml;mnesverktyg">
+					<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+				</span>
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="dropdown-menu-threadtools">
+				
+
+				<li class="dropdown-header">&Auml;mnesverktyg</li>
+				
+				<li><a href="/t3688745n">Visa f&ouml;rsta ol&auml;sta</a></li>
+				
+				<li><a href="showthread.php?do=findbydate&amp;t=3688745 #findpostbydateform" rel="remote-modal" data-title="Hitta inl&auml;gg efter datum">Hitta inl&auml;gg efter datum</a></li>
+
+			
+
+			
+			
+			
+
+			
+			</ul>
+		</div>
+		</div> <!-- /.btn-group -->
+
+		
+
+	</div>
+
+	<div class="col-sm-8 col-xs-6 text-right">
+		<ul class="pagination pagination-xs">
+	<li class="hidden-xs">
+		<span class="input-page-jump" data-total-pages="72" data-page="1" data-url="/t3688745">Sidan 1 av 72</span>
+	</li>
+
+	
+
+	
+
+	<li class="active">
+	<a class="input-page-jump-xs" data-total-pages="72" data-page="1" data-url="/t3688745" data-url-append="" href="#" title="Visar resultat 1 till 12 av 858">1</a>
+</li>
+<li><a href="/t3688745p2" title="Visar 13 till 24 av 858">2</a></li>
+<li class="visible-lg-inline"><a href="/t3688745p11" title="Visar 121 till 132 av 858"><!--+10-->11</a></li>
+<li class="visible-lg-inline"><a href="/t3688745p51" title="Visar 601 till 612 av 858"><!--+50-->51</a></li>
+
+
+	
+		<li class="next">
+			<a href="/t3688745p2" title="N&auml;sta sida - Visar 13 till 24 av 858">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</li>
+	
+
+	
+		<li class="last">
+			<a href="/t3688745p72" title="Sista sidan - Visar 853 till 858 av 858"><i class="fa fa-angle-double-right"></i></a>
+		</li>
+	
+</ul>
+
+
+		
+
+	</div>
+</div>
+
+
+
+<div id="posts">
+	<!-- post #92597432 -->
+
+
+<div id="post92597432" data-postid="92597432" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597432"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:24
+				<a name="newpost"></a>
+
+				
+				<a href="/find_posts_by_user.php?p=92597432" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597432" rel="nofollow" id="postcount92597432" name="1"><strong>1</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597432" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u755203">
+						-dev
+						</a>
+					
+
+					<!-- post 92597432 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597432">
+						<li class="dropdown-header">-dev</li>
+						
+						<li><a href="/u755203">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=755203">Skicka ett privat meddelande till -dev</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=755203" rel="nofollow">Hitta fler inl&auml;gg av -dev</a></li>
+						<li><a href="/find_posts_by_user.php?userid=755203&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av -dev i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597432 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Nov 2012</div>
+					
+						<div>Inl&auml;gg: 250</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597432">
+				Tycker mig märka att AI har avstannat, att tekniken börjar nå sitt max. Inte så att det går att slipa på tekniken men det jag tror kommer hända är att AI blir bättre att anpassa sig till var och ens behov, att kostnaderna går ner.<br />
+<br />
+Får fortfarande idiot svar på en del testfrågor jag brukar ställa. De olika &quot;test&quot; de använder för att se hur mycket &quot;bättre&quot; nya modeller är, de är så lätta att genomskåda. Modellerna blir bättre på att härma men nu är det bara detaljer i varje ny variant.<br />
+<br />
+AI (som säkert många vet) är en mycket simpel teknik för att matcha mönster och därmed kunna förutse vad som kommer.<br />
+<br />
+Tekniken används mer och mer och fundera då, blir det bättre?<br />
+- <b>Filmer</b>, har kvaliteten ökat<br />
+- <b>Musik</b>, är det bättre musik<br />
+- <b>Konst</b>, blir det bättre konst eller strömlinjeformas det<br />
+<br />
+<b>Mobiler</b>, Runt 2010 var det mängder med varianter av mobiler, flera olika operativsystem tävlade. Idag ser nästan alla mobiler likadana ut<br />
+<br />
+Är själv utvecklare och tror programmering är bland de första att ta till sig tekniken. AI är egentligen en mycket kraftfull sökmotor och fungerar ok som LSP om man lär sig förträna den. Också bra för att utföra repetitiva uppgifter.<br />
+AI gör att man kan producera mycket kod men tror väldigt många snabbt lär sig att koden måste underhållas och det är inte alls lika lätt.<br />
+Tycker mig märka att baksidan av AI visar sig mer och mer, kreativitet minskar, utvecklare slutar tänka själva och så vidare.<br />
+<br />
+Några få förstår att det bara är ett verktyg och man måste själv fortfarande lära sig men den stora majoriteten verkar inte begripa.<br />
+<br />
+Tror faktiskt att den här bubblan håller på att spricka, AI kommer vara en stor del av samhället men tror det blir ett mycket tråkigare samhälle när/om allt är samma.
+			</div>
+
+			
+			
+			<div class="clear signature">
+				__________________<br />
+				<em>
+				Senast redigerad av -dev 2025-08-03 kl. 15:27.
+				
+				</em>
+			</div>
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597432" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597432 -->
+<!-- post #92597473 -->
+
+
+<div id="post92597473" data-postid="92597473" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597473"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:28
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597473" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597473" rel="nofollow" id="postcount92597473" name="2"><strong>2</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597473" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u1629075">
+						Galejan
+						</a>
+					
+
+					<!-- post 92597473 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597473">
+						<li class="dropdown-header">Galejan</li>
+						
+						<li><a href="/u1629075">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=1629075">Skicka ett privat meddelande till Galejan</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=1629075" rel="nofollow">Hitta fler inl&auml;gg av Galejan</a></li>
+						<li><a href="/find_posts_by_user.php?userid=1629075&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av Galejan i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597473 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar" href="/u1629075">
+						<img src="https://static.flashback.org/img/avatar/397/1629075.jpg" alt="Galejans avatar" />
+					</a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Jan 2024</div>
+					
+						<div>Inl&auml;gg: 6&nbsp;501</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597473">
+				<div class="post-bbcode-quote-wrapper">
+	<small>Citat:</small>
+	<div class="alt2 post-bbcode-quote">
+		
+			<div>
+			
+				<a href="/p92597432#p92597432"><i class="glyphicon glyphicon-arrow-left"></i></a> Ursprungligen postat av <strong>-dev</strong>
+			</div>
+			<div class="post-clamped-text">
+Tycker mig märka att AI har avstannat, att tekniken börjar nå sitt max.<br /></div>
+		
+	</div>
+</div>
+
+Nej. Det är bara du som är okunnig. Tvärtom har AI aldrig utvecklats så fort som nu.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597473" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597473 -->
+<!-- post #92597494 -->
+
+
+<div id="post92597494" data-postid="92597494" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597494"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:33
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597494" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597494" rel="nofollow" id="postcount92597494" name="3"><strong>3</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597494" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u755203">
+						-dev
+						</a>
+					
+
+					<!-- post 92597494 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597494">
+						<li class="dropdown-header">-dev</li>
+						
+						<li><a href="/u755203">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=755203">Skicka ett privat meddelande till -dev</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=755203" rel="nofollow">Hitta fler inl&auml;gg av -dev</a></li>
+						<li><a href="/find_posts_by_user.php?userid=755203&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av -dev i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597494 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Nov 2012</div>
+					
+						<div>Inl&auml;gg: 250</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597494">
+				<div class="post-bbcode-quote-wrapper">
+	<small>Citat:</small>
+	<div class="alt2 post-bbcode-quote">
+		
+			<div>
+			
+				<a href="/p92597473#p92597473"><i class="glyphicon glyphicon-arrow-left"></i></a> Ursprungligen postat av <strong>Galejan</strong>
+			</div>
+			<div class="post-clamped-text">
+Nej. Det är bara du som är okunnig. Tvärtom har AI aldrig utvecklats så fort som nu.<br /></div>
+		
+	</div>
+</div>
+
+Vad menas med &quot;utvecklas&quot;? Kan du vara mer specifik?<br />
+<br />
+Det är fortfarande samma teknik under ytan, kan du den så vet du när den maxar.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597494" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597494 -->
+<!-- post #92597547 -->
+
+
+<div id="post92597547" data-postid="92597547" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597547"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:38
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597547" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597547" rel="nofollow" id="postcount92597547" name="4"><strong>4</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597547" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u1629075">
+						Galejan
+						</a>
+					
+
+					<!-- post 92597547 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597547">
+						<li class="dropdown-header">Galejan</li>
+						
+						<li><a href="/u1629075">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=1629075">Skicka ett privat meddelande till Galejan</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=1629075" rel="nofollow">Hitta fler inl&auml;gg av Galejan</a></li>
+						<li><a href="/find_posts_by_user.php?userid=1629075&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av Galejan i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597547 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar" href="/u1629075">
+						<img src="https://static.flashback.org/img/avatar/397/1629075.jpg" alt="Galejans avatar" />
+					</a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Jan 2024</div>
+					
+						<div>Inl&auml;gg: 6&nbsp;501</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597547">
+				<div class="post-bbcode-quote-wrapper">
+	<small>Citat:</small>
+	<div class="alt2 post-bbcode-quote">
+		
+			<div>
+			
+				<a href="/p92597494#p92597494"><i class="glyphicon glyphicon-arrow-left"></i></a> Ursprungligen postat av <strong>-dev</strong>
+			</div>
+			<div class="post-clamped-text">
+Vad menas med &quot;utvecklas&quot;? Kan du vara mer specifik?<br />
+<br />
+Det är fortfarande samma teknik under ytan, kan du den så vet du när den maxar.<br /></div>
+		
+	</div>
+</div>
+
+Jag tänker inte vara mer specifik. Är du programmerare borde du känna till att AIs kapacitet fördubblas var sjunde månad. Det här att AI kommer att börja ta över hela yrkesområden är inget som kommer om tio-tjugo år utan det är redan igång. Du kommer också att bli ersatt, vi pratar max något år eller två sedan är det arbetsförmedlingen för dig med.<br />
+<br />
+Vad du sysslar med i trådstarten är önsketänkande. Som sossen som sa att det där med internet bara är en fluga eftersom folk inte kommer att vilja sitta vid en skärm hela kvällarna.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597547" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597547 -->
+<!-- post #92597562 -->
+
+
+<div id="post92597562" data-postid="92597562" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597562"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:39
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597562" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597562" rel="nofollow" id="postcount92597562" name="5"><strong>5</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597562" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u300176">
+						kallstrom
+						</a>
+					
+
+					<!-- post 92597562 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597562">
+						<li class="dropdown-header">kallstrom</li>
+						
+						<li><a href="/u300176">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=300176">Skicka ett privat meddelande till kallstrom</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=300176" rel="nofollow">Hitta fler inl&auml;gg av kallstrom</a></li>
+						<li><a href="/find_posts_by_user.php?userid=300176&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av kallstrom i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597562 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Nov 2008</div>
+					
+						<div>Inl&auml;gg: 47</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597562">
+				ska man vara uppriktig,så är ai fortfarande rätt dum och är inte så intelligent som man vill att den ska vara. Det som fortlöper nu är hur snabb och vad den kan lösa nu! Men det finns nog Ai som är allt annat än det vi konsumeter ser och kan använda
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597562" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597562 -->
+<!-- post #92597564 -->
+
+
+<div id="post92597564" data-postid="92597564" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597564"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:39
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597564" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597564" rel="nofollow" id="postcount92597564" name="6"><strong>6</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597564" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u1737748">
+						BaronAfTrosa
+						</a>
+					
+
+					<!-- post 92597564 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597564">
+						<li class="dropdown-header">BaronAfTrosa</li>
+						
+						<li><a href="/u1737748">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=1737748">Skicka ett privat meddelande till BaronAfTrosa</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=1737748" rel="nofollow">Hitta fler inl&auml;gg av BaronAfTrosa</a></li>
+						<li><a href="/find_posts_by_user.php?userid=1737748&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av BaronAfTrosa i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597564 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar" href="/u1737748">
+						<img src="https://static.flashback.org/img/avatar/424/1737748.jpg" alt="BaronAfTrosas avatar" />
+					</a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Jul 2025</div>
+					
+						<div>Inl&auml;gg: 535</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597564">
+				Elon säger att AI är bra. och framtiden Jag litar på allt den mannen säger då han är sänd av gud. Han fistar noobs som Da Vinci och Einstein.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597564" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597564 -->
+<!-- post #92597618 -->
+
+
+<div id="post92597618" data-postid="92597618" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597618"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:45
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597618" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597618" rel="nofollow" id="postcount92597618" name="7"><strong>7</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597618" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u755203">
+						-dev
+						</a>
+					
+
+					<!-- post 92597618 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597618">
+						<li class="dropdown-header">-dev</li>
+						
+						<li><a href="/u755203">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=755203">Skicka ett privat meddelande till -dev</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=755203" rel="nofollow">Hitta fler inl&auml;gg av -dev</a></li>
+						<li><a href="/find_posts_by_user.php?userid=755203&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av -dev i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597618 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Nov 2012</div>
+					
+						<div>Inl&auml;gg: 250</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597618">
+				<div class="post-bbcode-quote-wrapper">
+	<small>Citat:</small>
+	<div class="alt2 post-bbcode-quote">
+		
+			<div>
+			
+				<a href="/p92597547#p92597547"><i class="glyphicon glyphicon-arrow-left"></i></a> Ursprungligen postat av <strong>Galejan</strong>
+			</div>
+			<div class="post-clamped-text">
+Jag tänker inte vara mer specifik. Är du programmerare borde du känna till att AIs kapacitet fördubblas var sjunde månad. Det här att AI kommer att börja ta över hela yrkesområden är inget som kommer om tio-tjugo år utan det är redan igång. Du kommer också att bli ersatt, vi pratar max något år eller två sedan är det arbetsförmedlingen för dig med.<br /></div>
+		
+	</div>
+</div>
+
+<br />
+Kan du visa något nytt coolt program som AI producerat?<br />
+Programmerare idag är bra mycket sämre än vad de var för 20 år sedan och tror du mig inte så titta på &quot;enklare&quot; områden som jag listade.<br />
+Idag går knappt folk på bio längre för filmerna är skräp. Ny musik går att hitta men tycker mig märka att gamla stjärnor med egen stil, eller konst med egen stil. Det behövs för att underhålla intresse.<br />
+<br />
+Har reda märkt hur folk är misstänksamma över AI generad text när folk skriver till varandra. Det vill man inte se, det är snart nästan positivt att ha meningsbyggnadsfel och stavfel.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597618" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597618 -->
+<!-- post #92597625 -->
+
+
+<div id="post92597625" data-postid="92597625" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597625"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:47
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597625" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597625" rel="nofollow" id="postcount92597625" name="8"><strong>8</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597625" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u755203">
+						-dev
+						</a>
+					
+
+					<!-- post 92597625 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597625">
+						<li class="dropdown-header">-dev</li>
+						
+						<li><a href="/u755203">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=755203">Skicka ett privat meddelande till -dev</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=755203" rel="nofollow">Hitta fler inl&auml;gg av -dev</a></li>
+						<li><a href="/find_posts_by_user.php?userid=755203&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av -dev i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597625 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Nov 2012</div>
+					
+						<div>Inl&auml;gg: 250</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597625">
+				<div class="post-bbcode-quote-wrapper">
+	<small>Citat:</small>
+	<div class="alt2 post-bbcode-quote">
+		
+			<div>
+			
+				<a href="/p92597564#p92597564"><i class="glyphicon glyphicon-arrow-left"></i></a> Ursprungligen postat av <strong>BaronAfTrosa</strong>
+			</div>
+			<div class="post-clamped-text">
+Elon säger att AI är bra. och framtiden Jag litar på allt den mannen säger då han är sänd av gud. Han fistar noobs som Da Vinci och Einstein.<br /></div>
+		
+	</div>
+</div>
+
+Samtidigt tycks GROK blivit politiskt korrekt
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597625" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597625 -->
+<!-- post #92597655 -->
+
+
+<div id="post92597655" data-postid="92597655" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597655"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 15:50
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597655" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597655" rel="nofollow" id="postcount92597655" name="9"><strong>9</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597655" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u755203">
+						-dev
+						</a>
+					
+
+					<!-- post 92597655 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597655">
+						<li class="dropdown-header">-dev</li>
+						
+						<li><a href="/u755203">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=755203">Skicka ett privat meddelande till -dev</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=755203" rel="nofollow">Hitta fler inl&auml;gg av -dev</a></li>
+						<li><a href="/find_posts_by_user.php?userid=755203&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av -dev i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597655 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Nov 2012</div>
+					
+						<div>Inl&auml;gg: 250</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597655">
+				<div class="post-bbcode-quote-wrapper">
+	<small>Citat:</small>
+	<div class="alt2 post-bbcode-quote">
+		
+			<div>
+			
+				<a href="/p92597562#p92597562"><i class="glyphicon glyphicon-arrow-left"></i></a> Ursprungligen postat av <strong>kallstrom</strong>
+			</div>
+			<div class="post-clamped-text">
+Men det finns nog Ai som är allt annat än det vi konsumeter ser och kan använda<br /></div>
+		
+	</div>
+</div>
+
+En fördel med AI är att de inte kan vara hemliga. AI måste ha <b>MYCKET</b> träningsdata, därför är det mycket svårt att utveckla hemliga verktyg och tekniken är så enkel och därför lätt att härma.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597655" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597655 -->
+<!-- post #92597832 -->
+
+
+<div id="post92597832" data-postid="92597832" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597832"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 16:11
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597832" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597832" rel="nofollow" id="postcount92597832" name="10"><strong>10</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597832" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u980843">
+						Jessicaa92
+						</a>
+					
+
+					<!-- post 92597832 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597832">
+						<li class="dropdown-header">Jessicaa92</li>
+						
+						<li><a href="/u980843">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=980843">Skicka ett privat meddelande till Jessicaa92</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=980843" rel="nofollow">Hitta fler inl&auml;gg av Jessicaa92</a></li>
+						<li><a href="/find_posts_by_user.php?userid=980843&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av Jessicaa92 i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597832 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Jan 2015</div>
+					
+						<div>Inl&auml;gg: 512</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597832">
+				<div class="post-bbcode-quote-wrapper">
+	<small>Citat:</small>
+	<div class="alt2 post-bbcode-quote">
+		
+			<div>
+			
+				<a href="/p92597432#p92597432"><i class="glyphicon glyphicon-arrow-left"></i></a> Ursprungligen postat av <strong>-dev</strong>
+			</div>
+			<div class="post-clamped-text">
+Tycker mig märka att AI har avstannat, att tekniken börjar nå sitt max. Inte så att det går att slipa på tekniken men det jag tror kommer hända är att AI blir bättre att anpassa sig till var och ens behov, att kostnaderna går ner.<br />
+<br />
+Får fortfarande idiot svar på en del testfrågor jag brukar ställa. De olika &quot;test&quot; de använder för att se hur mycket &quot;bättre&quot; nya modeller är, de är så lätta att genomskåda. Modellerna blir bättre på att härma men nu är det bara detaljer i varje ny variant.<br />
+<br />
+AI (som säkert många vet) är en mycket simpel teknik för att matcha mönster och därmed kunna förutse vad som kommer.<br />
+<br />
+Tekniken används mer och mer och fundera då, blir det bättre?<br />
+- <b>Filmer</b>, har kvaliteten ökat<br />
+- <b>Musik</b>, är det bättre musik<br />
+- <b>Konst</b>, blir det bättre konst eller strömlinjeformas det<br />
+<br />
+<b>Mobiler</b>, Runt 2010 var det mängder med varianter av mobiler, flera olika operativsystem tävlade. Idag ser nästan alla mobiler likadana ut<br />
+<br />
+Är själv utvecklare och tror programmering är bland de första att ta till sig tekniken. AI är egentligen en mycket kraftfull sökmotor och fungerar ok som LSP om man lär sig förträna den. Också bra för att utföra repetitiva uppgifter.<br />
+AI gör att man kan producera mycket kod men tror väldigt många snabbt lär sig att koden måste underhållas och det är inte alls lika lätt.<br />
+Tycker mig märka att baksidan av AI visar sig mer och mer, kreativitet minskar, utvecklare slutar tänka själva och så vidare.<br />
+<br />
+Några få förstår att det bara är ett verktyg och man måste själv fortfarande lära sig men den stora majoriteten verkar inte begripa.<br />
+<br />
+Tror faktiskt att den här bubblan håller på att spricka, AI kommer vara en stor del av samhället men tror det blir ett mycket tråkigare samhälle när/om allt är samma.<br /></div>
+		
+	</div>
+</div>
+
+Jag håller med och tror det kommer förstöra samhället och göra människor ännu mer olyckliga, för inget kommer ha en mening till slut. Tex måla tavlor, det gör AI. Bildredigering? Det gör AI. Kommer ihåg när man satt och knåpade i Photoshop och lärde sig alla saker manuellt. Nu trycker man på en knapp. Otroligt trist. Glädjen över att ha lärt sig redigera på riktigt och utvecklas i det, var kul. Precis som koda hemsidor. Bygga forum. Gästböcker. Göra roliga blinkies till hemsidan. Allt försvinner. <br />
+<br />
+Det kommer ju inte vara så att man behöver göra nånting själv till slut. <br />
+<br />
+Ska man bara sitta rakt upp och ned i sin soffa och trycka på en knapp, när man vill göra något? Nej jag tror inte på det här.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597832" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597832 -->
+<!-- post #92597841 -->
+
+
+<div id="post92597841" data-postid="92597841" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597841"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 16:11
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597841" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597841" rel="nofollow" id="postcount92597841" name="11"><strong>11</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+					<strong>elmheden</strong>
+					
+
+					<!-- post 92597841 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597841">
+						<li class="dropdown-header">elmheden</li>
+						
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=598055" rel="nofollow">Hitta fler inl&auml;gg av elmheden</a></li>
+						<li><a href="/find_posts_by_user.php?userid=598055&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av elmheden i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597841 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Avslutad 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597841">
+				1999: &quot;Internet - Har det peakat?&quot;
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597841" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597841 -->
+<!-- post #92597846 -->
+
+
+<div id="post92597846" data-postid="92597846" class="post">
+
+
+	<div class="post-heading">
+		
+				<a class="jumptarget" name="p92597846"></a>
+				<i class="fa fa-file new"></i>
+				2025-08-03, 16:12
+				
+
+				
+				<a href="/find_posts_by_user.php?p=92597846" rel="nofollow"><i class="glyphicon glyphicon-arrow-right"></i></a>
+				
+
+				<div class="pull-right">
+					
+					&nbsp;
+					#<a href="/sp92597846" rel="nofollow" id="postcount92597846" name="12"><strong>12</strong></a>
+
+					
+				</div>
+				<div class="clear"></div>
+		
+	</div>
+
+	<div class="post-body">
+
+	<div class="post-row">
+		<div class="post-col post-left">
+
+			<div class="post-user">
+			
+
+				<div class="dropdown">
+					
+						<a class="post-user-username dropdown-toggle" id="dropdown-user-post92597846" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="/u1433635">
+						Himmalajja
+						</a>
+					
+
+					<!-- post 92597846 popup menu -->
+					<ul class="dropdown-menu" aria-labelledby="dropdown-user-post92597846">
+						<li class="dropdown-header">Himmalajja</li>
+						
+						<li><a href="/u1433635">Visa allm&auml;n profil</a></li>
+						
+						
+						<li><a href="/private.php?do=newpm&amp;u=1433635">Skicka ett privat meddelande till Himmalajja</a></li>
+						
+						
+						<li><a href="/find_posts_by_user.php?userid=1433635" rel="nofollow">Hitta fler inl&auml;gg av Himmalajja</a></li>
+						<li><a href="/find_posts_by_user.php?userid=1433635&amp;threadid=3688745" rel="nofollow">Hitta alla inl&auml;gg av Himmalajja i detta &auml;mne</a></li>
+						
+						
+					</ul>
+					<!-- / post 92597846 popup menu -->
+				</div>
+
+				
+					<div class="post-user-title">Medlem 
+	<i class="fa fa-circle" style="color:#900000" title="offline"></i>
+	
+
+
+</div>
+				
+				
+					<a class="post-user-avatar post-user-avatar-empty"></a>
+				
+				<div class="post-user-info small">
+					
+
+					<div>Reg: Apr 2021</div>
+					
+						<div>Inl&auml;gg: 5&nbsp;919</div>
+					
+
+					
+
+					
+
+					
+				</div>
+
+			
+
+
+			</div>
+
+		</div>
+
+		<div class="post-col post-right">
+			
+			<div class="post_message" id="post_message_92597846">
+				Ai har knappt börjat.
+			</div>
+
+			
+			
+
+		</div>
+	</div> <!--/.post-row-->
+	<div class="post-row">
+
+		<div class="post-col post-left hidden-xs"></div>
+
+		<div class="post-col post-icons">
+			<div class="pull-left">
+
+				
+
+				
+
+				
+
+				
+				
+
+				
+			</div>
+
+			
+
+			
+				
+
+				
+				<a href="newreply.php?do=newreply&amp;p=92597846" class="btn btn-xs" title="Svara p&aring; inl&auml;gg" data-toggle="tooltip" rel="nofollow"><i class="fa fa-comment"></i><span class="btn-text"> Citera</span></a>
+				
+			
+
+			
+			<div class="clear"></div>
+		</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- / post #92597846 -->
+
+	<div id="lastpost"></div>
+</div>
+
+<div class="row row-forum-toolbar">
+	<div class="col-sm-3 col-xs-6">
+		<div class="btn-group btn-group-xs">
+		
+			<a class="btn btn-default btn-xs" href="/newreply.php?do=newreply&amp;noquote=1&amp;p=92597432" rel="nofollow">
+			
+				<span data-toggle="tooltip" data-title="Svara p&aring; &auml;mnet">
+					<i class="fa fa-reply" aria-hidden="true"></i><span class="btn-text"> Svara</span>
+				</span>
+		</a>
+		
+		</div>
+	</div>
+	<div class="col-sm-9 col-xs-6 text-right">
+		<ul class="pagination pagination-xs">
+	<li class="hidden-xs">
+		<span class="input-page-jump" data-total-pages="72" data-page="1" data-url="/t3688745">Sidan 1 av 72</span>
+	</li>
+
+	
+
+	
+
+	<li class="active">
+	<a class="input-page-jump-xs" data-total-pages="72" data-page="1" data-url="/t3688745" data-url-append="" href="#" title="Visar resultat 1 till 12 av 858">1</a>
+</li>
+<li><a href="/t3688745p2" title="Visar 13 till 24 av 858">2</a></li>
+<li class="visible-lg-inline"><a href="/t3688745p11" title="Visar 121 till 132 av 858"><!--+10-->11</a></li>
+<li class="visible-lg-inline"><a href="/t3688745p51" title="Visar 601 till 612 av 858"><!--+50-->51</a></li>
+
+
+	
+		<li class="next">
+			<a href="/t3688745p2" title="N&auml;sta sida - Visar 13 till 24 av 858">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</li>
+	
+
+	
+		<li class="last">
+			<a href="/t3688745p72" title="Sista sidan - Visar 853 till 858 av 858"><i class="fa fa-angle-double-right"></i></a>
+		</li>
+	
+</ul>
+
+	</div>
+</div>
+
+
+
+
+
+<div id="bottom-banner-container">
+</div>
+
+
+
+
+<div id="panel-login-register">
+	<h3 class="times">Skapa ett konto eller logga in f&ouml;r att kommentera</h3>
+	<p>Du m&aring;ste vara medlem f&ouml;r att kunna kommentera</p>
+
+	<div id="panel-login-register-cols">
+
+		<div>
+			<h4>Skapa ett konto</h4>
+			<p>Det &auml;r enkelt att registrera ett nytt konto</p>
+			<a class="btn btn-primary btn-block btn-md" href="/register/">Bli medlem</a>
+		</div>
+
+		<hr />
+
+		<div>
+			<h4>Logga in</h4>
+			<p>Har du redan ett konto? Logga in h&auml;r</p>
+
+			<a class="btn btn-primary btn-block btn-md" href="/login.php">Logga in</a>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+
+	
+		<div class="col-md-3" id="site-right">
+			
+
+
+<div class="row">
+	<div class="col-sm-6 col-md-12 hidden-xs">
+		<div id="outsider-banner-wrapper">
+		</div>
+	</div>
+</div>
+
+
+
+		</div>
+	
+
+</div>
+</div> <!-- /.container -->
+
+</div> <!-- /#site -->
+
+<footer class="footer" id="footer">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="go-top hover-fade" href="#top" onclick="self.scrollTo(0, 0); return false;"><i class="fa fa-angle-up fa-2x"></i></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-xs-12">
+			<ul class="list-inline">
+				<li><a href="/kontakt">Om Flashback</a></li>
+				<li><a href="/contact.php?ad=1">Annonsera</a></li>
+				<li><a href="/datapolicy.php">Integritet</a></li>
+				<li><a href="#" class="qc-settings">Cookie-inst&auml;llningar</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-6 col-xs-12 text-right">
+			<ul class="list-inline">
+				<li><a href="/a-o">A-&Ouml;</a></li>
+				<li><a href="/f351">FAQ</a></li>
+				<li><a href="/regler">Regler</a></li>
+
+				
+				<li><a href="/moderatorer">Moderatorer</a></li>
+
+				<li><a href="/sitemap/index.php/">&Ouml;versikt</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</footer>
+
+<!-- ajax modal -->
+<div class="modal fade" id="remote-modal" tabindex="-1" role="dialog" aria-labelledby="remote-modal-label">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         <h4 class="modal-title" id="remote-modal-label"></h4>
+       </div>
+       <div class="modal-body">
+       </div>
+     </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+<style>
+
+#panel-login-register {
+border-top: 16px solid #dad8d6;
+text-align: center;
+padding: 10px;
+padding-bottom: 30px;
+}
+
+#panel-login-register-cols {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	margin-top: 30px;
+}
+
+#panel-login-register-cols > div {
+text-align: center;
+width: 320px;
+margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+#site-content {
+background: #dad8d6 !important;
+}
+#site-left {
+padding-bottom: 0 !important;
+}
+
+#panel-login-register-cols > hr {
+width: 90%;
+margin-top: 25px;
+}
+
+}
+
+@media (min-width: 768px) {
+
+	#panel-login-register {
+		border-bottom: none;
+		margin: 0 -20px;
+		padding-bottom: 16px;
+	}
+
+	#panel-login-register-cols {
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 40px;
+		margin-top: 20px;
+	}
+
+	#panel-login-register-cols > div {
+		width: 350px;
+	}
+
+}
+
+#panel-login-register h3 {
+font-family: Georgia;
+font-size: 23px;
+font-weight: 700;
+border: none;
+padding:0;
+margin-bottom: 5px;
+}
+#panel-login-register h4 {
+font-family: Inter,  Helvetica, Arial, sans-serif;
+font-size: 18px;
+font-weight: bold;
+margin: 0 0 5px 0;
+}
+#panel-login-register p {
+color: rgb(117, 117, 117);
+font-size: 13px;
+}
+#panel-login-register .btn {
+margin-top: 20px;
+padding: 8px;
+font-size: 13px;
+}
+
+</style>
+
+
+</body>
+</html>

@@ -113,8 +113,8 @@ class TrafilaturaTxtExtractor(TrafilaturaExtractor, name="trafilatura_txt"):
                 success=True,
             )
 
-        except Exception as e:
+        except Exception as exc:
             return ExtractionResult.create_error_result(
-                f"Trafilatura extraction failed: {str(e)}",
+                f"Trafilatura extraction failed: {str(exc)}",
                 error_traceback="".join(traceback.format_exception(exc)),
             )
